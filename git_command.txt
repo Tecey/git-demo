@@ -14,25 +14,41 @@ git config --list
 git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe'
 > -multiInst -nosession"
 
-cd /F/IT/EPAM_навч/data/temp
+cd /F/IT/EPAM_навч/data/temp/
+	перехід в гілку (master за замовченням)
+
+cd git-demo/
+	перехід в гілку main
+
 
 git clone https://github.com/Tecey/git-demo
+	створює папку на гітхабу
 
-cd git-demo/ 
-	
+
+
 git remote -v
 
+
+
+*	*	*	*	*	*	*	*	*
 ***
 git status
+	виясняє зміни відстежуваної папки
 
 ***
 git add git_command.txt
+	(проіндексувати) добавляє відстеження файла
 
 ***
 git commit -m "add new fail"
+	добаляє + коментує зміни
 
 ***
 git push
+	відправляє до гітхабу
+
+*	*	*	*	*	*	*	*	*
+
 
 git log
 
@@ -42,10 +58,12 @@ git init
 
 git gui&
 	викликає менеджер git gui
-	
+	переважно є інструментом для доопрацювання комітів
+
 gitk&
 	викликає менеджер gitk&
-	
+	це графічний переглядач історії
+
 git show -s --pretty=raw b2b84
 git ls-tree 629eb
 git show add54
@@ -66,5 +84,53 @@ git commit --amend -m "commit message"
 
 git revert <sha1>
 
+/	/	/	/	/	/	/	/	/	/	/	/	/	/	/	/	/	/	/
+	***	gitignor	***
 
-	
+.gitignore
+
+# ігнорувати всі файли .log
+*.log
+
+# проте відстежувати файл error.log хоч ми й ігноруємо .log файли вище
+!error.log
+
+# Ігнорувати файл TODO тільки в поточній теці, не в інших теках subdir/TODO
+/TODO
+
+# Ігнорувати усі файли в теці build/
+build/
+
+# Ігнорувати doc/notes.txt, проте не doc/server/arch.txt
+doc/*.txt
+
+# Ігнорувати усі .pdf файли в теці doc/ та всіх її підтеках
+doc/**/*.pdf
+
+/	/	/	/	/	/	/	/	/	/	/	/	/	/	/	/	/	/	/
+
+
+git branch (назва)
+	створюэ нову гілку з (назвою)
+
+git checkout -b iss53
+	створення та перехід в нову гілку "iss53"
+
+git checkout master
+	перехід в гілку 'master'
+
+git merge hotfix
+	злитя "hotfix" в 'master' бо тут зараз знаходимось
+
+git branch -d hotfix
+	видаляє гілку "hotfix" (3a0874c).
+
+
+git merge --abort
+
+git checkout -- Xours --Xtheirs
+
+git diff
+
+git revert 09Fe472
+
