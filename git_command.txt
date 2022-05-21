@@ -19,9 +19,52 @@ cd /F/IT/EPAM_навч/data/temp
 git clone https://github.com/Tecey/git-demo
 
 cd git-demo/ 
-	в мастер переводить
+	
+git remote -v
+
+***
+git status
+
+***
+git add git_command.txt
+
+***
+git commit -m "add new fail"
+
+***
+git push
+
+git log
+
+git pull
 
 git init
 
 git gui&
+	викликає менеджер git gui
+	
+gitk&
+	викликає менеджер gitk&
+	
+git show -s --pretty=raw b2b84
+git ls-tree 629eb
+git show add54
 
+git checkout -- file.txt
+git checkout .
+	на всі файли
+git clean -xdf
+
+git reset -- file.txt
+	Команда git reset і справді може бути небезпечною, особливо
+разом з опцією --hard. Втім, в описаному вище випадку, файл
+у робочій теці не змінюється жодним чином, тож вона
+відносно безпечна.
+
+git reset HEAD^^ (HEAD~2)
+git commit --amend -m "commit message"
+
+git revert <sha1>
+
+
+	
