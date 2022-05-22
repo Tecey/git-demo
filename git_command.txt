@@ -1,3 +1,10 @@
+git help config
+	ви можете отримати допомогу у довіднику для команди git config або інші команди
+
+git config -h
+	можете отримати стислішу
+	версію за допомогою опцій -h чи --help
+
 git config --global user.name "Vadym Nechyporenko"
 git config --global user.email "tecey1@gmail.com"
 
@@ -8,8 +15,11 @@ git config --global user.name
 Vadym Nechyporenko
 
 pwd
-
+	показує діючий каталог на зараз
+	
 git config --list
+	подивитися на свої налаштування
+	
 
 git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe'
 > -multiInst -nosession"
