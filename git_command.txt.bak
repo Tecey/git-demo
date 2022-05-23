@@ -71,7 +71,7 @@ git commit -m "add new fail"
 	добаляє + коментує зміни
 
 ***
-git push 		git_command.txt
+git push git_command.txt
 	відправляє до гітхабу (на сервер з якого зробив клон)
 	
 	
