@@ -65,11 +65,13 @@ git status
 ***
 git add git_command.txt
 	(проіндексувати) добавляє відстеження файла
-
+git add *
+	всі проіндиксує
+	
 ***
 git commit -m "add new fail"
 	добаляє + коментує зміни
-
+git commit -m "add first half of my favorite song"
 ***
 git push 		git_command.txt
 	відправляє до гітхабу (на сервер з якого зробив клон)
@@ -331,4 +333,7 @@ git submodule init
 	щоб проініціалізувати ваш файл локальною конфігурації, та 
 git submodule update
 	щоб отримати всі дані з того проекту та перейти до відповідного коміту, який вказано у вашому головному проекті
+	
+git restore song.txt.txt
+	відновлює видалений файл
 	
