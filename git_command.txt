@@ -68,6 +68,11 @@ git add git_command.txt
 git add *
 	всі проіндиксує
 	
+git rm 		song.txt.txt.bak
+	видалити його з індексу
+	-видаляє файл з вашої робочої директорії, щоб наступного разу він
+	не відображався неконтрольованим
+	
 ***
 git commit -m "add new fail"
 	добаляє + коментує зміни
@@ -75,7 +80,7 @@ git commit -m "add first half of my favorite song"
 ***
 git push 		git_command.txt
 	відправляє до гітхабу (на сервер з якого зробив клон)
-	
+
 	
 	
 git fetch
