@@ -65,7 +65,9 @@ git status
 ***
 git add git_command.txt
 	(проіндексувати) добавляє відстеження файла
-
+git add *
+	всі проіндиксує
+	
 ***
 git commit -m "add new fail"
 	добаляє + коментує зміни
